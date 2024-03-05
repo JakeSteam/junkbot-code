@@ -1,6 +1,6 @@
 # Junkbot Code
 
-This project aims to extract all of Junkbot's source code (and potentially assets) for preservation purposes. Since it is currently buried within an Adobe Director project, they're unsearchable.
+This project aims to extract all of Junkbot's source code (and potentially assets) for preservation purposes. Since it is all buried within an Adobe Director project, it's currently unsearchable.
 
 Note that these `.ls` files are written in "[Lingo](<https://en.wikipedia.org/wiki/Lingo_(programming_language)>) (Adobe Director)", not "[LINGO](https://www.lindo.com/index.php/products/lingo-and-optimization-modeling) (mathematical modelling).
 
@@ -14,6 +14,10 @@ The `/code/` directory contains all extracted scripts, whilst the `/reference/` 
 - [`junkbot2_13g_asp.dcr`]: The original Junkbot game, taken from [an Archive.org backup](https://web.archive.org/web/20020803205407/http://www.lego.com:80/build/junkbot/junkbot.asp?x=x&login=0).
 - [`junkbot2_13g_asp.dir`]: The `.dcr` file decompiled ([guide](https://blog.jakelee.co.uk/decompiling-adobe-director-files/)).
 
-## Organisation
+To try and keep a bit of structure, scrips are organised according to their grouping in the game files (e.g. `editor`, or `sound`), and with their script type (`cast_` / `behavior_` / `movie_` / `parent_`) as a prefix.
 
-To try and keep a bit of structure, scrips are organised according to their grouping in the game files (e.g. `editor`, or `sound`), and with their [script type](<https://en.wikipedia.org/wiki/Lingo_(programming_language)#Scripting>) (`cast_` / `behavior_` / `movie_`) as a prefix.
+The initial script name capitalisation has been kept, hence the inconsistencies! Some files also had no name, so their numeric ID has been used instead.
+
+The file groups seem to be:
+
+- `Internal`: Intended for core functionality, such as displaying text, the overall game loop, etc. This appears to be a mixture of prebuilt and new scripts.
