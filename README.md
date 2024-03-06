@@ -1,8 +1,8 @@
 ![](/files/screens_by_peter/complete_all_levels_msg.bmp)
 
-# Junkbot Code
+# Junkbot
 
-This project extracts all of Junkbot's source code and assets for preservation purposes. Since it is all buried within a 20+ year old Adobe Director project, it's currently unsearchable.
+This project extracts all of [Junkbot](https://en.brickimedia.org/wiki/Junkbot)'s source code and assets for preservation purposes. Since it is all buried within a 20+ year old Adobe Director project, it's currently unsearchable.
 
 Note that these `.ls` files are written in "[Lingo](<https://en.wikipedia.org/wiki/Lingo_(programming_language)>)" (Adobe Director), not "[LINGO](https://www.lindo.com/index.php/products/lingo-and-optimization-modeling)" (mathematical modelling).
 
@@ -49,5 +49,7 @@ The affected files are the 9 "cursor" files inside `Internal`.
 
 ## Utilities
 
+- [AntRenamer](https://antp.be/software/renamer) for bulk filename / extension changing.
 - n0samu's [DirectorCastRipper](https://github.com/n0samu/DirectorCastRipper) for asset extraction (although I did most of it manually).
 - If you're using VSCode, I recommend Mark Hughes' "[Lingo Syntax Highlighting](https://marketplace.visualstudio.com/items?itemName=markhughes.director-lingo)" extension.
+- 1j01's [HTML5 rewrite](https://1j01.github.io/janitorial-android/#junkbot).
