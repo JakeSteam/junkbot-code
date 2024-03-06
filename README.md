@@ -21,3 +21,26 @@ The initial script name capitalisation has been kept, hence the inconsistencies!
 The file groups seem to be:
 
 - `Internal`: Intended for core functionality, such as displaying text, the overall game loop, etc. This appears to be a mixture of prebuilt and new scripts.
+
+## Modified
+
+### 1-bit Bitmaps
+
+A few bitmaps were exported with a bit depth of 1 (e.g. black and white). This doesn't work on modern OS, so they have been converted into 16 depth bitmaps.
+
+### SWA sound files
+
+Some sound files were originally `.SWA`, which can't easily be played. Luckily, this format is just `.MP3` with extra data, so renaming to `.MP3` made them playable. Thanks, ["hp3" from 2004](https://board.flashkit.com/board/showthread.php?368011-SWA-to-WAV&s=8ddbd4570a8a14ad3138caa3912c99d0&p=3051963&viewfull=1#post3051963)!
+
+## Missing
+
+### Text
+
+There is misc text scattered around the game files, these aren't currently exported as they also contain formatting, fonts, layout, all things that can't be easily represented. I might export a plaintext version of these.
+
+### Flash Movies
+
+Currently, I can't get the any of the "Flash Movie" files. They can be played within Adobe Director, but not exported. As a last resort, these could just be screen captured, but this isn't ideal. The full list is:
+
+- In `screens_by_peter`, `portrait_2` (148x130, 50 frames): The winning animation with paper raining down upon Junkbot.
+- In `loading`, `intro_anim` (200x200, 480 frames): The entire intro animation.
