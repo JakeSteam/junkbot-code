@@ -4,7 +4,7 @@
 
 This project extracts all of [Junkbot](https://en.brickimedia.org/wiki/Junkbot)'s source code and assets for preservation purposes. Previously, it was all buried within a 20+ year old Adobe Director project.
 
-Note that these `.ls` files are written in "[Lingo](<https://en.wikipedia.org/wiki/Lingo_(programming_language)>)" (Adobe Director), not "[LINGO](https://www.lindo.com/index.php/products/lingo-and-optimization-modeling)" (mathematical modelling).
+Note that the `.ls` files are written in "[Lingo](<https://en.wikipedia.org/wiki/Lingo_(programming_language)>)" (Adobe Director), not "[LINGO](https://www.lindo.com/index.php/products/lingo-and-optimization-modeling)" (mathematical modelling), or "[LiveScript](https://en.wikipedia.org/wiki/LiveScript_(programming_language))" (JS).
 
 ## Project structure
 
@@ -12,7 +12,7 @@ Note that these `.ls` files are written in "[Lingo](<https://en.wikipedia.org/wi
 
 The `/files/` directory contains all extracted scripts (`.ls`), images (`.bmp`), sounds (`.wav` / `.mp3`), Flash animations (`.swf`), and text (`.txt`).
 
-To try and keep a bit of structure, scrips are organised according to their "cast" (group) in the game files (e.g. `editor`, or `sound`), and with their script type (`cast_` / `behavior_` / `movie_` / `parent_`) as a prefix.
+To try and keep a bit of structure, scripts are organised according to their "cast" (group) in the original project (e.g. `editor`, or `sound`), and with their script type (`cast_` / `behavior_` / `movie_` / `parent_`) as a prefix.
 
 A few interesting areas to highlight:
 
