@@ -24,13 +24,15 @@ The file groups seem to be:
 
 ## Modified
 
-### 1-bit Bitmaps
-
-A few bitmaps were exported with a bit depth of 1 (e.g. black and white). This doesn't work on modern OS, so they have been converted into 16 depth bitmaps.
-
 ### SWA sound files
 
 Some sound files were originally `.SWA`, which can't easily be played. Luckily, this format is just `.MP3` with extra data, so renaming to `.MP3` made them playable. Thanks, ["hp3" from 2004](https://board.flashkit.com/board/showthread.php?368011-SWA-to-WAV&s=8ddbd4570a8a14ad3138caa3912c99d0&p=3051963&viewfull=1#post3051963)!
+
+### 1-bit Bitmaps
+
+A few bitmaps were exported with a bit depth of 1 (e.g. black and white). These didn't work properly on modern OS, so have been converted to a bit depth of 8.
+
+The affected files are the 9 "cursor" files inside `Internal`.
 
 ## Missing
 
