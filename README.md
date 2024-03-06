@@ -2,7 +2,7 @@
 
 # Junkbot
 
-This project extracts all of [Junkbot](https://en.brickimedia.org/wiki/Junkbot)'s source code and assets for preservation purposes. Since it is all buried within a 20+ year old Adobe Director project, it's currently unsearchable.
+This project extracts all of [Junkbot](https://en.brickimedia.org/wiki/Junkbot)'s source code and assets for preservation purposes. Previously, it was all buried within a 20+ year old Adobe Director project.
 
 Note that these `.ls` files are written in "[Lingo](<https://en.wikipedia.org/wiki/Lingo_(programming_language)>)" (Adobe Director), not "[LINGO](https://www.lindo.com/index.php/products/lingo-and-optimization-modeling)" (mathematical modelling).
 
