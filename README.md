@@ -1,28 +1,41 @@
+![](/files/screens_by_peter/complete_all_levels_msg.bmp)
+
 # Junkbot Code
 
-This project aims to extract all of Junkbot's source code (and potentially assets) for preservation purposes. Since it is all buried within an Adobe Director project, it's currently unsearchable.
+This project extracts all of Junkbot's source code and assets for preservation purposes. Since it is all buried within a 20+ year old Adobe Director project, it's currently unsearchable.
 
 Note that these `.ls` files are written in "[Lingo](<https://en.wikipedia.org/wiki/Lingo_(programming_language)>)" (Adobe Director), not "[LINGO](https://www.lindo.com/index.php/products/lingo-and-optimization-modeling)" (mathematical modelling).
 
-If you're using VSCode, I recommend Mark Hughes' "[Lingo Syntax Highlighting](https://marketplace.visualstudio.com/items?itemName=markhughes.director-lingo)" extension.
+## Project structure
 
-## Files
+### Files
 
-The `/code/` directory contains all extracted scripts, whilst the `/reference/` directory contains a few useful files:
+The `/files/` directory contains all extracted scripts (`.ls`), images (`.bmp`), sounds (`.wav` / `.mp3`), Flash animations (`.swf`), and text (`.txt`).
+
+To try and keep a bit of structure, scrips are organised according to their "cast" (group) in the game files (e.g. `editor`, or `sound`), and with their script type (`cast_` / `behavior_` / `movie_` / `parent_`) as a prefix.
+
+A few interesting areas to highlight:
+
+- **All game sounds / music**: [`/files/sound/`](/files/sound/)
+- **All level data**: [`/files/levels/`](/files/levels/)
+- **All bricks**: [`/files/legoparts/`](/files/legoparts/)
+- **Secret in-dev names of levels**: [`/files/catalog/catalog text.txt`](/files/catalog/catalog%20text.txt)
+- **Animation components**: [`/files/dynamic/`](/files/dynamic/), filenames constructed by [`behaviour_legoparts manager.ls`](/files/Internal/behavior_legoparts%20manager.ls).
+
+And just some assets I like:
+
+| [![](/files/screens_by_peter/119.bmp)](/files/screens_by_peter/119.bmp) | [![](/files/screens_by_peter/122.bmp)](/files/screens_by_peter/122.bmp) | [![](/files/screens_by_peter/plaque_president.bmp)](/files/screens_by_peter/plaque_president.bmp) |
+| :---------------------------------------------------------------------: | :---------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: |
+
+### Reference
+
+The `/reference/` directory contains a few useful files:
 
 - `director_reference.pdf`: Adobe's official 1,426 page guide to Director coding (Lingo). Whilst this useful for specific function definitions, Lingo itself is pretty readable if you know other languages.
 - `junkbot2_13g_asp.dcr`: The original Junkbot game, taken from [an Archive.org backup](https://web.archive.org/web/20020803205407/http://www.lego.com:80/build/junkbot/junkbot.asp?x=x&login=0).
 - `junkbot2_13g_asp.dir`: The `.dcr` file decompiled ([guide](https://blog.jakelee.co.uk/decompiling-adobe-director-files/)).
 
-To try and keep a bit of structure, scrips are organised according to their grouping in the game files (e.g. `editor`, or `sound`), and with their script type (`cast_` / `behavior_` / `movie_` / `parent_`) as a prefix.
-
-The initial script name capitalisation has been kept, hence the inconsistencies! Some files also had no name, so their numeric ID has been used instead.
-
-The file groups seem to be:
-
-- `Internal`: Intended for core functionality, such as displaying text, the overall game loop, etc. This appears to be a mixture of prebuilt and new scripts.
-
-## Modified
+## Modified assets
 
 ### SWA sound files
 
@@ -34,15 +47,7 @@ A few bitmaps were exported with a bit depth of 1 (e.g. black and white). These 
 
 The affected files are the 9 "cursor" files inside `Internal`.
 
-## Missing
+## Utilities
 
-### Text
-
-There is misc text scattered around the game files, these aren't currently exported as they also contain formatting, fonts, layout, all things that can't be easily represented. I might export a plaintext version of these.
-
-### Flash Movies
-
-Currently, I can't get the any of the "Flash Movie" files. They can be played within Adobe Director, but not exported. As a last resort, these could just be screen captured, but this isn't ideal. The full list is:
-
-- In `screens_by_peter`, `portrait_2` (148x130, 50 frames): The winning animation with paper raining down upon Junkbot.
-- In `loading`, `intro_anim` (200x200, 480 frames): The entire intro animation.
+- n0samu's [DirectorCastRipper](https://github.com/n0samu/DirectorCastRipper) for asset extraction (although I did most of it manually).
+- If you're using VSCode, I recommend Mark Hughes' "[Lingo Syntax Highlighting](https://marketplace.visualstudio.com/items?itemName=markhughes.director-lingo)" extension.
