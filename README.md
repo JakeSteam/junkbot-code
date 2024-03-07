@@ -22,6 +22,11 @@ A few interesting areas to highlight:
 - **Secret in-dev names of levels**: [`/files/catalog/catalog text.txt`](/files/catalog/catalog%20text.txt)
 - **Animation components**: [`/files/dynamic/`](/files/dynamic/), filenames constructed by [`behaviour_legoparts manager.ls`](/files/Internal/behavior_legoparts%20manager.ls).
 
+And a few asset bugs:
+
+- One of [the walking animations](https://raw.githubusercontent.com/JakeSteam/junkbot-code/main/files/dynamic/MINIFIG_WALK_R_1_s2.bmp) has a mysterious pink thing ([`1.bmp`](https://raw.githubusercontent.com/JakeSteam/junkbot-code/main/files/dynamic/1.bmp)) in the top left.
+- Some assets (e.g. [`MINIFIG_walk_l_10_s1`](https://raw.githubusercontent.com/JakeSteam/junkbot-code/main/files/dynamic/MINIFIG_walk_l_10_s1.bmp) & [`MINIFIG_walk_l_1_s1`](https://raw.githubusercontent.com/JakeSteam/junkbot-code/main/files/dynamic/MINIFIG_walk_l_1_s1.bmp)) have a single coloured pixel in the bottom left corner.
+
 And just some assets I like:
 
 | [![](/files/screens_by_peter/119.bmp)](/files/screens_by_peter/119.bmp) | [![](/files/screens_by_peter/122.bmp)](/files/screens_by_peter/122.bmp) | [![](/files/screens_by_peter/plaque_president.bmp)](/files/screens_by_peter/plaque_president.bmp) |
