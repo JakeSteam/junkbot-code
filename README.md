@@ -36,7 +36,7 @@ And just some assets I like:
 
 The `/reference/` directory contains a few useful files:
 
-- `director_reference.pdf`: Adobe's official 1,426 page guide to Director coding (Lingo). Whilst this useful for specific function definitions, Lingo itself is pretty readable if you know other languages.
+- `director_reference.pdf`: Adobe's official 1,426 page guide to Director programming (in Lingo). Whilst this is useful for specific function definitions, Lingo itself is pretty readable if you know other languages.
 - `junkbot2_13g_asp.dcr`: The original Junkbot game, taken from [an Archive.org backup](https://web.archive.org/web/20020803205407/http://www.lego.com:80/build/junkbot/junkbot.asp?x=x&login=0).
 - `junkbot2_13g_asp.dir`: The `.dcr` file decompiled ([guide](https://blog.jakelee.co.uk/decompiling-adobe-director-files/)).
 
